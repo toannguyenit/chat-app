@@ -10,9 +10,12 @@
     - react-router-dom: Tạo MVC
 
 # npm git init
-#
-
-
+# git add .
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin git@github.com:toannguyenit/chat-app.git
+# git push -u origin main
+    Cài đặt git và đưa dự án lên github
 
 
 
