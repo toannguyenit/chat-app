@@ -17,6 +17,9 @@
 # git push -u origin main
     Cài đặt git và đưa dự án lên github
 
+# Trong video hướng dẫn đang sử dụng hookV5, hiện tại đang hookV6 nên có một số thay đổi, hãy lên trang web để đọc doc
+    - useHistory => useNavigative
+    - Switch => Routes
 
 
 

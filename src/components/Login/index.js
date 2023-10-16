@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Button, Typography } from "antd";
 
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 import {
   signInWithPopup,
@@ -13,14 +13,11 @@ import { authentication } from "../../firebase/config";
 const { Title } = Typography;
 
 export default function Login() {
-  const navigate = useNavigate();
-
 
   const handleFbLogin = () => {
     const fbProvider = new FacebookAuthProvider();
     signInWithPopup(authentication, fbProvider)
       .then((re) => {
-        // console.log(re);
       })
       .catch((err) => {
         console.log(err.message);
@@ -38,14 +35,7 @@ export default function Login() {
       });
   };
 
-  authentication.onAuthStateChanged((user) => {
-    console.log({user});
-    if (user) {
 
-      // navigate("/login");
-
-    }
-  })
   return (
     <div>
       <Row justify="center" style={{ height: 800 }}>
